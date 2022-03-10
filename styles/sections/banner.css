@@ -1,0 +1,117 @@
+main .banner {
+	height: 406px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+/* center */
+main .banner__main {
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 0.5fr 0.5fr;
+}
+
+main .banner__main-right {
+	height: 100%;
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+main .banner__main-right .title {
+	font-family: BrownVN, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 56px;
+	text-align: center;
+
+	margin-top: 71px;
+	color: #0c2440;
+}
+
+main .banner__main-right .sub-title {
+	font-family: BrownVN, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 25px;
+	line-height: 33px;
+
+	margin-top: 16px;
+	color: #06bae8;
+}
+
+main .banner__main-right .btn button {
+	font-family: BrownVN, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 42px;
+	text-align: center;
+	color: #ffffff;
+
+	width: 274px;
+	height: 67px;
+	margin-top: 37px;
+
+	cursor: pointer;
+	background: linear-gradient(80.25deg, #3dffc8 1.31%, #40f6cf 15.32%, #49dce1 38.61%, #57b3ff 68.19%);
+	box-shadow: 0px 4px 8px rgba(46, 153, 241, 0.5);
+	border-radius: 20px;
+
+	transition: all 0.3s ease-out;
+}
+
+main .banner__main-right .btn button:active {
+	box-shadow: 0px 4px 14px rgba(46, 153, 241, 0.5);
+	background: linear-gradient(80.25deg, #3dffc8 1.61%, #40f6cf 18.32%, #49dce1 40.61%, #57b3ff 70.19%);
+}
+
+main .banner__main-left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main .banner__main-left .banner__main-left__center {
+	height: 100%;
+	width: 302px;
+	position: relative;
+}
+
+main .banner__main-left .banner__main-left__center .img-circle {
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+main .banner__main-left .banner__main-left__center .img-phone {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+}
+
+/* vector */
+main .banner__vector {
+	position: absolute;
+}
+
+main .banner__vector img {
+	object-fit: cover;
+}
+
+.banner__vector-right {
+	top: 50%;
+}
+
+.banner__vector-left {
+	right: 0;
+	bottom: 0;
+	transform: translateY(25%);
+}

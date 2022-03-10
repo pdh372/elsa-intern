@@ -1,0 +1,313 @@
+.form {
+	overflow: hidden;
+	min-height: 830px;
+	background: #0c2440;
+
+	display: flex;
+	/* grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr; */
+}
+
+.form .form__left {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form .form__left__box {
+	background: #ffffff;
+	box-shadow: 5px 5px 8px rgba(12, 36, 64, 0.3);
+	border-radius: 20px;
+	width: 600px;
+	min-height: 702px;
+	height: fit-content;
+	overflow: hidden;
+
+	/* display: flex;
+	flex-direction: column; */
+}
+
+.form .form__left__box .box-header {
+	width: 600px;
+	height: 130px;
+
+	background: linear-gradient(81.84deg, #49dce1 1.09%, #39a3fb 96.86%);
+	box-shadow: 0px 4px 8px rgba(46, 153, 241, 0.5);
+	border-radius: 15px 15px 0px 0px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form .form__left__box .box-header p {
+	width: 443px;
+	height: 98px;
+
+	font-family: BrownVN, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 49px;
+	text-align: center;
+
+	color: #ffffff;
+}
+
+/* group - input */
+.form .group-input {
+	padding: 20px 32px 0px 32px;
+}
+
+.form .form-input {
+	display: grid;
+	grid-template-columns: 30px 1fr 1.5fr;
+	align-items: center;
+	gap: 10px 20px;
+	margin-bottom: 20px;
+}
+
+.form .form-input input {
+	grid-column: 1 / span 3;
+	padding: 5px 10px;
+	font-size: 20px;
+	color: rgb(21, 148, 190);
+}
+
+.icon-person {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon-person img:nth-child(1) {
+	height: 17px;
+	width: 17px;
+}
+
+.icon-person img:nth-child(2) {
+	height: 19px;
+	width: 30px;
+}
+
+.form .form-input label {
+	font-family: BrownVN, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 25px;
+	line-height: 33px;
+
+	color: #06bae8;
+}
+
+.form .form-input .label-error {
+	font-family: BrownVN, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 21px;
+	line-height: 33px;
+
+	color: lightcoral;
+}
+
+.form .form-input input {
+	width: 536px;
+	height: 60px;
+
+	background: #ffffff;
+	border: 2px solid #57b3ff;
+	box-sizing: border-box;
+}
+
+/* group checkbox */
+.group-checkbox {
+	padding: 5px 32px;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* checkbox */
+.container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.container .text {
+	position: relative;
+	top: 7px;
+	left: 20px;
+
+	font-family: BrownVN, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 25px;
+	line-height: 33px;
+
+	color: #000000;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: rgb(255, 255, 255);
+	border: 2px solid #57b3ff;
+	width: 40px;
+	height: 40px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+	background-color: #eee;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+	background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+	left: 12px;
+	top: 3px;
+	width: 10px;
+	height: 20px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.form__left__box .btn {
+	margin: 20px auto;
+	width: 530px;
+	height: 74px;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+
+	background: linear-gradient(80.25deg, #3dffc8 1.31%, #40f6cf 15.32%, #49dce1 38.61%, #57b3ff 68.19%);
+	box-shadow: 0px 4px 8px rgba(46, 153, 241, 0.5);
+}
+
+.form__left__box .btn button {
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+	font-family: BrownVN, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 42px;
+	background-color: transparent;
+
+	color: #ffffff;
+	cursor: pointer;
+
+	transition: all 0.3 ease-in;
+}
+
+.form__left__box .btn button:active {
+	background: linear-gradient(80.25deg, #3dffc8 2.31%, #40f6cf 16.32%, #49dce1 40.61%, #57b3ff 70.19%);
+	box-shadow: 0px 4px 12px rgba(37, 139, 223, 0.5);
+}
+
+/* right */
+.form__right {
+	width: 50%;
+	height: 100%;
+	position: relative;
+}
+
+.form__right__container {
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form__right__container img {
+	object-fit: contain;
+	z-index: 99;
+}
+
+.form__right__icons {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.form__right__icons .logo-react {
+	position: absolute;
+	right: -10px;
+	top: 40px;
+}
+
+.form__right__icons .vt1 {
+	position: absolute;
+	left: 20%;
+	top: 60%;
+}
+
+.form__right__icons .vt2 {
+	position: absolute;
+	left: 75%;
+	top: 45%;
+}
+
+.form__right__icons .vt3 {
+	position: absolute;
+	left: 25%;
+	bottom: 20%;
+}
+
+.form__right__icons .vt4 {
+	position: absolute;
+	left: 50%;
+	top: 20%;
+}
+
+.price p {
+	text-align: center;
+	padding: 5px 0px;
+	font-size: 30px;
+	color: red;
+}

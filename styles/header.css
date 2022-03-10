@@ -1,0 +1,31 @@
+header.header {
+	height: 94px;
+	width: 100%;
+	box-shadow: 0px 4px 20px rgba(12, 36, 64, 0.1);
+}
+
+.header__content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100%;
+}
+
+.header__content__logo {
+	height: 62px;
+	width: 62px;
+	margin-right: 10px;
+}
+
+.header__content__logo img {
+	object-fit: cover;
+}
+
+.header__content__text {
+	margin-left: 10px;
+}
+
+.header__content__text__alphabet {
+	margin-left: 5px;
+}

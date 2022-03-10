@@ -1,0 +1,86 @@
+.ads {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.ads .title {
+	margin-top: 70px;
+}
+
+.ads .title p {
+	font-family: BrownVN, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 41px;
+	line-height: 49px;
+	text-align: center;
+
+	color: gray;
+}
+
+.ads .sub-title {
+	margin-top: 20px;
+}
+
+.ads .sub-title p {
+	font-family: BrownVN, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 27px;
+	line-height: 49px;
+	text-align: center;
+
+	color: gray;
+}
+
+.ads .group-img {
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 50px;
+}
+
+.group-img__item {
+	display: grid;
+	grid-template-columns: 320px;
+	grid-template-rows: 626px 1fr;
+	gap: 30px;
+}
+
+.group-img__item .item__content {
+	font-family: BrownVN, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 49px;
+
+	color: gray;
+}
+
+.group-img__item .item__content span {
+	font-family: AvenirNext, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 30px;
+	text-decoration: none solid rgb(71, 141, 255);
+	word-spacing: 0px;
+	color: #1abce8;
+}
+
+.ads .btn button {
+	background: linear-gradient(80.25deg, #3dffc8 1.31%, #40f6cf 15.32%, #49dce1 38.61%, #57b3ff 68.19%);
+	box-shadow: 0px 4px 8px rgba(46, 153, 241, 0.5);
+	font-family: BrownVN, sans-serif;
+	font-size: 37px;
+	font-weight: bold;
+	line-height: 30px;
+	text-decoration: none solid rgb(71, 141, 255);
+	word-spacing: 0px;
+	color: white;
+	padding: 20px 80px;
+	border-radius: 100px;
+	margin: 100px 0;
+	cursor: pointer;
+}

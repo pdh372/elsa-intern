@@ -1,0 +1,22 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #ffffff;
+}
+
+button {
+	outline: none;
+	border: none;
+}
+
+input:focus {
+	outline: none;
+}
